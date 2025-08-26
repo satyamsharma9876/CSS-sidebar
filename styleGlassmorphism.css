@@ -1,0 +1,46 @@
+/* removing some default margin and padding */
+body, h1, p{ 
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;/*what is its use*/
+}
+body{
+    /* background: linear-gradient(135deg,#acbaa2, #b72c2c); */
+    background: url("https://e1.pxfuel.com/desktop-wallpaper/642/743/desktop-wallpaper-sunrise-mountains-landscape-evening-nature-mountain-landscape-nature.jpg");
+    background-size: cover;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding:20px;
+    box-shadow:0 4px 30px rgba(0,0,0, 0.4);
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.3);
+    color:white;
+    text-align: center;
+    
+}
+.glass-card h1{
+    font-size:1.8 rem;
+    margin-bottom:10px;
+}
+.glass-card p{
+     font-size:1.2 rem;
+    margin-bottom:20px;
+}
+.glass-card button{
+    border:none;
+    padding:10px 20px;
+    border-radius: 10px;
+    color:#fbfcfa;
+    cursor:pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition:background 0.3s ease-in-out;
+}
+.glass-card button:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,45 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #dd5757, #2f1297);
+}
+.btn{
+    position: relative;
+}
+.hover-button{
+    position: relative; /* what is its use */
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+    overflow: hidden;
+   /* transition: color 0.3s ease;*/ /*for changine color inside button*/
+}
+/* .hover-button:hover{
+    color: #ff6b6b;
+    box-shadow: 0 0 20px rgba(36, 32, 32, 0.5);
+    transform: scale(1.5);
+} */
+ .hover-button:hover{
+    box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.2);
+ }
+.hover-button::before{
+    content: '';
+    position:absolute; /* what is its use */
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.2);
+    z-index: -1; /* what is its use */
+    transition: left 0.4s ease;
+}
+.hover-button:hover::before{
+    left: 0;
+}
